@@ -1,0 +1,25 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/extend'; 
+@import 'icons/iconfont__variables';
+@import 'icons/iconfont__icons';
+
+
+
+// Base Style
+@import "base/variables";
+@import "base/placeholders";
+
+
+
+// Google fonts
+
+@import "base/fonts";
+
+
+
+
+
+// Parts of my project
+@import 'base/sass-structure/header';
+@import 'base/sass-structure/main';

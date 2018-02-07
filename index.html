@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bergen</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <script src="dist/libs/js/js.js"></script>
+</head>
+<body> 
+
+
+    <div class="wrapper">
+      <header class="header">
+       <div class="header__wrapper">
+          <div class="triangle">
+            <div class="triangle__content">
+              <nav class="header__navigation">
+                <a href="#" class="header__navigation-link">про комплекс</a>
+                <a href="#" class="header__navigation-link">квартири</a>
+                <a href="#" class="header__navigation-link">новини</a>
+                <a href="#" class="header__navigation-link">контакти</a>
+              </nav>
+            </div>
+            <div class="logo"><img src="dist/img/logo.png" alt="logo"></div>
+          </div>
+          <div class="triangle-arrow"></div> 
+      </div>
+      </header>
+      <section class="main">
+        <img src="dist/img/oak.png" alt="oak">
+      </section>
+      <section class="benefits"></section>
+      <section class="description"></section>
+      <footer class="footer"></footer>
+    </div>
+
+
+
+
+
+
+ <!--    
+    <div class="wrapper">
+      <header class="header">
+        <div class="figure">
+          <div class="text">Some text</div>
+        </div>
+        <div class="arrow"></div>
+      </header>
+      <section class="benefits"></section>
+      <section class="description"></section>
+      <footer class="footer"></footer>
+    </div>
+
+  
+
+
+    
+
+
+<svg width="200" height="200" class='test'>
+  <text x="0" y="80" font-size="20" font-weight="bold" fill="url(#textgradient)" stroke="none">Gradient</text> 
+
+
+
+  <use xlink:href="dist/svg/icons.svg#home"
+       x="0" y="0"
+       fill= 'blue'
+       fill-rule="evenodd"
+       stroke="yellowgreen"
+      />
+
+      <defs>  
+<linearGradient id="textgradient" x1="0%" x2="0%" y1="0%" y2="100%">  
+    <stop stop-color="#999" offset="0%"/>  
+    <stop stop-color="#111" offset="100%"/>  
+</linearGradient>  
+</defs>  
+
+</svg>
+
+
+ 
+
+
+
+
+
+
+
+ <div class="swiper-container">
+   
+    <div class="swiper-wrapper">
+       
+        <div class="swiper-slide bbb">Slide 1</div>
+        <div class="swiper-slide ccc">Slide 2</div>
+        <div class="swiper-slide ggg">Slide 3</div>
+       
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+ </div>
+-->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.bundle.js"></script>  
+
+
+<script>
+ var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+
+
+
+      effect: 'coverflow',
+      grabCursor: true,
+      
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script> 
+
+</body>
+</html>
