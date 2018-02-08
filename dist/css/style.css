@@ -414,7 +414,7 @@ body {
   overflow: hidden; }
 
 .box {
-  height: 35rem;
+  height: 33rem;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#00a0de), color-stop(50%, #00a0de), color-stop(50%, #1390c1), to(#1390c1));
   background: -o-linear-gradient(left, #00a0de 0%, #00a0de 50%, #1390c1 50%, #1390c1 100%);
@@ -481,7 +481,7 @@ body {
   color: #fff; }
 
 .logo img {
-  top: 12rem;
+  top: 15rem;
   z-index: 2; }
 
 .main {
@@ -493,7 +493,7 @@ body {
 
 .swiper-container {
   width: 65%;
-  height: 30rem;
+  height: 20rem;
   position: relative; }
 
 /*# sourceMappingURL=style.css.map */

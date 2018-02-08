@@ -8,7 +8,7 @@ body {font-family: $primary_font;}
 }
 
 .box {
-  height: 35rem;
+  height: 33rem; 
   width: 100%;
   background: linear-gradient(to right, #00a0de 0%, #00a0de 50%, #1390c1 50%,#1390c1 100%);
   background-size: cover;
@@ -71,7 +71,7 @@ body {font-family: $primary_font;}
 
 .logo img {
     @extend %ham;
-    top: 12rem;
+    top: 15rem;
     z-index: 2;
 }
 
