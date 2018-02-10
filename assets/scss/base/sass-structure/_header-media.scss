@@ -1,0 +1,21 @@
+@media screen and (max-width:540px) {
+	.box {
+		height: 10rem;
+	}
+
+	.logo img {
+	    top: 5rem;
+	    width: 25%;
+	    
+	}
+	.header__navigation {
+		width: 100%;
+	}
+	.header__navigation-link {
+		font-size: 1rem;
+	}
+
+	.main {
+		padding-top: 20rem;
+	}
+}

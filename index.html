@@ -47,14 +47,13 @@
         <div class="benefits__flat"></div>
         <div class="benefits__description">
             <div class="internal-text">
-                <h2>квартири з ремонтом</h2>
-                <div class="left-side">
-
+                <h1>квартири з ремонтом</h1>
+                <div class="text-wrapper">
+                  
                   <p>Як обрати квартиру, ціна якої зростатиме з роками? Надати перевагу локації, яка найближчим часом перетвориться на нове престижне місце для життя!</p>
 
                   <p>В країнах з розвиненим ринком нерухомості одними з найпрестижніших вважаються будинки «на першій лінії», що розташовані на узбережжях водойм – річок та озер. Саме тому для реалізації проекту ж/к Sundance було обрано зелений куточок Микільської Слобідки.</p>
-                             
-                
+              
                   <p>Як обрати квартиру, ціна якої зростатиме з роками? Надати перевагу локації, яка найближчим часом перетвориться на нове престижне місце для життя!</p>
 
                   <p>В країнах з розвиненим ринком нерухомості одними з найпрестижніших вважаються будинки «на першій лінії», що розташовані на узбережжях водойм – річок та озер. Саме тому для реалізації проекту ж/к Sundance було обрано зелений куточок Микільської Слобідки.</p>
@@ -63,21 +62,49 @@
         </div>
        
       </section>
-      
       <section class="description"></section>
-      <footer class="footer"></footer>
-    </div>
+      <footer class="footer">
+          <div class="footer-int-wrap">
+            <div class="footer-nav-side">
+              <nav class="footer__navigation">
+                <a href="#">Про комплекс</a>
+                <a href="#">Квартири</a>
+                <a href="#">Новини</a>
+                <a href="#">Контакти</a>
+              </nav>
+              <span class="footer__copyright">
+                &copy; 2015 Строительная группа «Фундамент». Все права защищены
+              </span>
+            </div>
+            <div class="footer-sale-side">
+              <div class="internal-wrapper">
+                <h2>Центральний офіс продажу:</h2>
+
+                <div class="sale-side__contacts">
+                  <div class="contacts__address">
+                    <span>Киев, пр.Отрадный, 103</span></br>
+                    <a href="mailto:info@bergen.com" class="contacts-mail">info@bergen.com.ua</a>  
+                  </div> 
+                  <div class="sale-side__address">
+                    <a href="tel:+38(044)6845285" class="contacts-phone">+38(044)684 52 85</a></br>
+                    <a href="tel:+38(044)2203022" class="contacts-phone">+38(044)220 30 22</a>
+                    
+                  </div>  
+                </div>
+                 
+              </div>
+            </div> 
+          </div>  
+          <img src="dist/img/footer-logo.png" alt="footer logo" class="footer__logo"> 
+      </footer>
+    </div> 
 
      
+  
 
-     
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.bundle.js"></script>  
-
 
 <script>
  var swiper = new Swiper('.swiper-container', {
@@ -89,14 +116,22 @@
       initialSlide: 3,
       loopFillGroupWithBlank: true,
 
-
-
-
       
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+
+      breakpoints: {
+    
+      540: {
+        slidesPerView: 1,
+         slidesOffsetBefore: 60,
+         width: 150,
+         
+         setWrapperSize: true,
+      }
+  }
     });
 </script> 
 

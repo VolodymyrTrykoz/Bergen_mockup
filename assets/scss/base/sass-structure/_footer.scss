@@ -1,0 +1,86 @@
+.footer {
+	background: $footer-bg;
+	position: relative;
+	&-int-wrap {
+		display: flex;
+		padding: 2.5em;
+	}
+
+	&-nav-side {
+		width: 25%;
+		border-right: 0.1em solid #000000;
+    	padding: 1em 3em 1em 0;
+	}
+
+	&-sale-side {
+		width: 25%;
+		border-left: 0.1em solid #464646;
+    	padding: 1em 3em 1em 0;
+
+    	& .internal-wrapper {
+    		padding-left: 2.5em;
+    	}
+    	& h2 {
+    		font-size: 1.4rem;
+    		margin: 0 0 0.5em 0;
+    		color: $footer-heading;
+    		text-transform: uppercase;
+    		font-weight: 100;
+
+    		
+    	}
+
+    	
+	}
+
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		& a {
+			font-size: 1.4rem;
+			text-decoration: none;
+			color: $footer-heading;
+			border-bottom: 1px dashed $footer-heading;
+		} 
+	}
+
+	&__copyright {
+		display: inline-block;
+		font-size: 1em;
+		color: $copiright-color;
+		padding-top: 1.5em;
+	}
+
+	&__logo {
+		@extend %vam;
+		position: absolute;
+		right: 0;
+		
+	}
+} 
+ 
+.sale-side__contacts {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts-phone {
+	font-size: 1.4rem;
+	color: $footer-phone;
+	text-decoration: none;
+
+}
+.contacts-mail {
+	color: #2589ba;
+	text-decoration: none;
+	border-bottom: 1px dashed #2589ba;
+
+}
+
+.contacts__address {
+	font-size: 1.2rem;
+	& span{
+	color: $footer-phone;
+	}
+}
+

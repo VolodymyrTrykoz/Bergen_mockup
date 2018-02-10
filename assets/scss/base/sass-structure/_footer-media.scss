@@ -1,0 +1,50 @@
+
+
+@media screen and (max-width: 1400px) {
+    .footer-nav-side, .footer-sale-side {
+	width: 50%;
+	}
+}
+
+
+
+@media screen and (max-width: 720px) {
+	.footer-nav-side, .footer-sale-side {
+	width: 100%;
+	}
+
+	.footer__navigation a {
+		font-size: 1rem;
+	}
+
+	.contacts-phone {
+		font-size: 1rem;
+
+	}
+	
+	.contacts__address {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+	.sale-side__address {
+		text-align: center;
+	}
+	.sale-side__contacts {
+		display: block;
+		
+	}
+    .footer-int-wrap {
+    	display: block;
+    }
+    .footer-nav-side, .footer-sale-side {
+    	border: none;
+    }
+}
+
+
+
+
+
+
+
+
