@@ -1,9 +1,9 @@
 .main {
-  background-image: url(../img/sky.png);
+  //background-image: url(../img/sky.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding-top: 50rem;
+  padding-top: 65rem;
 }
 
 
@@ -13,4 +13,17 @@
     height: 20rem;
     position: relative;
 }
+
+ 
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
 

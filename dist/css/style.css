@@ -385,6 +385,15 @@ th {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+.benefits__description .internal-text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 @font-face {
   font-family: "social";
   src: url("../assets/fonts/myicons.eot");
@@ -411,7 +420,10 @@ body {
 .wrapper {
   position: relative;
   max-width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url(../img/wrapper.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .box {
   height: 33rem;
@@ -449,7 +461,6 @@ body {
             transform: translateX(-50%);
     width: 60rem;
     height: 56.5rem;
-    background-image: url(../img/oak-left.png);
     background-repeat: no-repeat;
     background-size: cover; }
   .header__navigation:after {
@@ -464,7 +475,6 @@ body {
             transform: translateX(50%);
     width: 53rem;
     height: 43rem;
-    background-image: url(../img/oak-right.png);
     background-repeat: no-repeat;
     background-size: cover; }
 
@@ -485,15 +495,66 @@ body {
   z-index: 2; }
 
 .main {
-  background-image: url(../img/sky.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding-top: 50rem; }
+  padding-top: 65rem; }
 
 .swiper-container {
   width: 65%;
   height: 20rem;
   position: relative; }
+
+body, html {
+  height: 100%;
+  margin: 0; }
+
+.benefits {
+  position: relative;
+  height: 50rem; }
+  .benefits__flat {
+    height: 50rem;
+    width: 100%;
+    background-image: url(../img/flat.jpg);
+    background-size: cover;
+    background-position: 50% 69%;
+    -webkit-clip-path: polygon(100% 100%, 100% 0%, 0% 100%, 0 0);
+            clip-path: polygon(100% 100%, 100% 0%, 0% 100%, 0 0);
+    z-index: 1000;
+    position: absolute; }
+  .benefits__description {
+    width: 100%;
+    height: 50rem;
+    background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), color-stop(0%, #f5f5f5), color-stop(50%, #f5f5f5), color-stop(50%, #ffffff));
+    background: -o-linear-gradient(left, #f5f5f5 0%, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%);
+    background: linear-gradient(to right, #f5f5f5 0%, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%);
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    z-index: 1;
+    position: absolute;
+    top: 50%; }
+    .benefits__description .internal-text h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3.8rem; }
+
+.left-side {
+  width: 100%;
+  /*указываем общую ширину блока с колонками*/
+  text-align: justify;
+  /*выравнивание текста внутри колонок*/
+  -webkit-column-count: 2;
+          column-count: 2;
+  /*количество колонок, на которое хотим разбить текст*/
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  /*отступ между колонками*/ }
+
+.description {
+  -webkit-clip-path: polygon(50% 40%, 100% 0%, 100% 100%, 0% 100%, 0 0);
+  width: 100%;
+  height: 70rem;
+  background-size: cover;
+  background-position: 50% 100%; }
 
 /*# sourceMappingURL=style.css.map */

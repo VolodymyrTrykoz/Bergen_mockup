@@ -5,6 +5,9 @@ body {font-family: $primary_font;}
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  background-image: url(../img/wrapper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .box {
@@ -19,6 +22,8 @@ body {font-family: $primary_font;}
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
 }
 
+
+
 .header__navigation {
    width: 65%;
    display: flex;
@@ -26,34 +31,7 @@ body {font-family: $primary_font;}
    position: absolute;
    left: 50%;
    transform: translateX(-50%);
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        transform: translateX(-50%);
-        width: 60rem;
-        height: 56.5rem;
-        background-image: url(../img/oak-left.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-      } 
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        transform: translateX(50%);
-        width: 53rem;
-        height: 43rem;
-        background-image: url(../img/oak-right.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+     
 }
 
 .header__navigation-link {
