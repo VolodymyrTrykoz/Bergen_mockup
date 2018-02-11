@@ -12,7 +12,7 @@
 <body> 
 
 
-    <div class="wrapper">
+    <div id="box" class="wrapper">
       <div class="box clipPolygon"></div>
       <header class="header">
           <nav class="header__navigation">
@@ -21,15 +21,21 @@
             <a href="#" class="header__navigation-link">новини</a>
             <a href="#" class="header__navigation-link">контакти</a>
           </nav>
-          <div class="logo">
-             <img src="dist/img/logo.png" alt="company logo">
+          <div class="build-logo">
+             <img src="dist/img/buildingComp.png" alt="building company logo">
           </div>
+          <div class="logo">
+             <a href="https://fundament.ua/ru/projects/list/1377/" class="logo-link" target="_blank">
+                  <img src="dist/img/logo.png" alt="company logo">
+             </a>
+          </div>
+
       </header>
       <section class="main">
          <div class="swiper-container">
                  <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="dist/img/location.png" alt="location">
+                      <img src="dist/img/location.png" alt="location" class="hover rotate05">
                     </div>
                     <div class="swiper-slide">
                       <img src="dist/img/footage.png" alt="footage">
@@ -37,6 +43,7 @@
                     <div class="swiper-slide">
                       <img src="dist/img/lowPrice.png" alt="low price">
                     </div>
+
                  </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -97,6 +104,12 @@
           </div>  
           <img src="dist/img/footer-logo.png" alt="footer logo" class="footer__logo"> 
       </footer>
+
+      <img src="dist/img/leaf.png" alt="leaf" id="l1">
+      <img src="dist/img/leaf.png" alt="leaf" id="l2">
+      <img src="dist/img/leaf.png" alt="leaf" id="l3">
+      <img src="dist/img/leaf.png" alt="leaf" id="l4">
+      <img src="dist/img/leaf.png" alt="leaf" id="l5">
     </div> 
 
      
@@ -110,8 +123,8 @@
  var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       slidesPerGroup: 1,
-      slidesOffsetBefore: 100,
-      slidesOffsetAfter: 40,
+      
+      centeredSlides: true,
       loop: true,
       initialSlide: 3,
       loopFillGroupWithBlank: true,
@@ -123,13 +136,16 @@
       },
 
       breakpoints: {
-    
+      
+      920: {
+        slidesPerView: 3,
+        centeredSlides: true,
+      },  
+
       540: {
         slidesPerView: 1,
-         slidesOffsetBefore: 60,
-         width: 150,
-         
-         setWrapperSize: true,
+        centeredSlides: true,
+        
       }
   }
     });

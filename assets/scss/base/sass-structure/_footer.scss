@@ -41,6 +41,7 @@
 			text-decoration: none;
 			color: $footer-heading;
 			border-bottom: 1px dashed $footer-heading;
+
 		} 
 	}
 
@@ -84,3 +85,26 @@
 	}
 }
 
+a {
+	text-decoration: none;
+    transition: .2s;
+		&:hover {
+  		color: #42e39d;
+		}
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+  a {
+    background-color: skyBlue;
+    background-image: -webkit-linear-gradient(left,   #42e39d 0%, #ee970e 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}

@@ -1,13 +1,56 @@
+@media screen and (max-width:1024px) {
+	.header__navigation-link {
+			font-size: 1.2rem;
+		}
+}
+
+@media screen and (max-width:920px) {
+		
+		.box {
+			height: 20rem;
+		}
+
+		.logo-link img {
+			top: 5rem;
+			width: 7rem;
+		}
+
+		.header__navigation-link {
+			font-size: 1rem;
+		}
+		
+
+		.swiper-container {
+    		position: relative;
+        & .swiper-button-prev {
+          	position: absolute;
+          	top: 88%;
+          	left: 25%;
+        }
+
+        & .swiper-button-next {
+          position: absolute;
+          top: 88%;
+          right: 25%;
+        }
+	}
+}
+
+
 @media screen and (max-width:540px) {
 	.box {
 		height: 10rem;
 	}
 
-	.logo img {
-	    top: 5rem;
-	    width: 25%;
-	    
+	.build-logo {
+		top: 5rem;
+		width: 10rem;
+        height: 8rem;
+        	& img {
+        		transform: rotate(-113deg) skew(-20deg) translate(65%, -40%);
+        	}
 	}
+
 	.header__navigation {
 		width: 100%;
 	}
@@ -18,4 +61,21 @@
 	.main {
 		padding-top: 20rem;
 	}
+
+	.swiper-container {
+    	position: relative;
+        & .swiper-button-prev {
+          position: absolute;
+          top: 50%;
+          left: 0;
+        }
+
+        & .swiper-button-next {
+          position: absolute;
+          top: 50%;
+          right: 0;
+        }
+	}
+
+
 }

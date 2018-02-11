@@ -16,11 +16,24 @@
 }
 
  
+.swiper-slide img{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%),  rotateY(0);
+  cursor: pointer;
+  transition: all 0.2s linear;
+ animation: colorRotate 2s linear infinite;
+
+}
 
 
 
+@keyframes colorRotate {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
 
-
-
-
+  }
+}
 
