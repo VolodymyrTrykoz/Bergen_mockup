@@ -497,14 +497,6 @@ a {
         -ms-transform: scale(1, 1);
             transform: scale(1, 1); }
 
-/*
-.logo img {
-    @extend %ham;
-    top: 15rem;
-
-    
-}
-*/
 .build-logo {
   position: absolute;
   left: -3rem;
@@ -518,9 +510,9 @@ a {
   .build-logo img {
     height: 50%;
     width: auto;
-    -webkit-transform: rotate(-114deg) skew(-20deg) translate(55%, -40%);
-        -ms-transform: rotate(-114deg) skew(-20deg) translate(55%, -40%);
-            transform: rotate(-114deg) skew(-20deg) translate(55%, -40%);
+    -webkit-transform: rotate(-112deg) skew(-20deg) translate(55%, -40%);
+        -ms-transform: rotate(-112deg) skew(-20deg) translate(55%, -40%);
+            transform: rotate(-112deg) skew(-20deg) translate(55%, -40%);
     position: absolute;
     top: 50%;
     left: 50%; }
@@ -547,6 +539,46 @@ a {
 .logo-link img:hover {
   -webkit-animation: hover-in 1290ms linear both;
   animation: hover-in 1290ms linear both; }
+
+#l1, #l2, #l3, #l4, #l5 {
+  position: absolute; }
+
+#l1 {
+  top: 25%;
+  left: 50%;
+  height: 5%; }
+
+#l2 {
+  top: 10%;
+  left: 53%;
+  height: 6%;
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg); }
+
+#l3 {
+  top: 20%;
+  left: 80%;
+  height: 5%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#l4 {
+  top: 30%;
+  left: 73%;
+  height: 4%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#l5 {
+  top: 8%;
+  left: 28%;
+  height: 3%;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
 
 @-webkit-keyframes hover-in {
   0% {
@@ -676,47 +708,6 @@ a {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
 
-#l1, #l2, #l3, #l4, #l5 {
-  position: absolute;
-  top: 200px;
-  left: 200px; }
-
-#l1 {
-  top: 500px;
-  left: 1050px; }
-
-#l2 {
-  top: 400px;
-  left: 500px;
-  height: 6%;
-  -webkit-transform: rotate(150deg);
-      -ms-transform: rotate(150deg);
-          transform: rotate(150deg); }
-
-#l3 {
-  top: 300px;
-  left: 1200px;
-  height: 5%;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg); }
-
-#l4 {
-  top: 1400px;
-  left: 1050px;
-  height: 4%;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg); }
-
-#l5 {
-  top: 100px;
-  left: 1050px;
-  height: 3%;
-  -webkit-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-          transform: rotate(270deg); }
-
 .main {
   background-repeat: no-repeat;
   background-size: cover;
@@ -739,8 +730,8 @@ a {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-animation: colorRotate 2s linear infinite;
-          animation: colorRotate 2s linear infinite; }
+  -webkit-animation: colorRotate 5s linear infinite;
+          animation: colorRotate 5s linear infinite; }
 
 @-webkit-keyframes colorRotate {
   100% {
@@ -775,7 +766,7 @@ a {
     position: absolute;
     top: 50%; }
     .benefits__description .internal-text {
-      top: 43%; }
+      top: 45%; }
       .benefits__description .internal-text h1 {
         color: #666e77;
         text-align: center;
@@ -879,21 +870,21 @@ a {
   a:hover {
     color: #42e39d; }
 
-@media (-webkit-min-device-pixel-ratio: 0) {
-  a {
-    background-color: skyBlue;
-    background-image: -webkit-linear-gradient(left, #42e39d 0%, #ee970e 50%, transparent 50%);
-    background-position: 100% 0;
-    background-size: 200% 200%;
-    color: transparent;
-    -webkit-transition: .1s .2s;
-    -webkit-background-clip: text; }
-  a:hover {
-    background-position: 0 0;
-    color: transparent;
-    -webkit-transition: .4s 0;
-    -o-transition: .4s 0;
-    transition: .4s 0; } }
+a {
+  background-color: skyBlue;
+  background-image: -webkit-linear-gradient(left, #42e39d 0%, #ee970e 50%, transparent 50%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-transition: .1s .2s;
+  -webkit-background-clip: text; }
+
+a:hover {
+  background-position: 0 0;
+  color: transparent;
+  -webkit-transition: .4s 0;
+  -o-transition: .4s 0;
+  transition: .4s 0; }
 
 @media screen and (max-width: 1024px) {
   .header__navigation-link {
@@ -920,7 +911,7 @@ a {
 
 @media screen and (max-width: 540px) {
   .box {
-    height: 10rem; }
+    height: 15rem; }
   .build-logo {
     top: 5rem;
     width: 10rem;
@@ -929,10 +920,22 @@ a {
       -webkit-transform: rotate(-113deg) skew(-20deg) translate(65%, -40%);
           -ms-transform: rotate(-113deg) skew(-20deg) translate(65%, -40%);
               transform: rotate(-113deg) skew(-20deg) translate(65%, -40%); }
+  .logo-link {
+    top: 5%;
+    left: 80%; }
   .header__navigation {
-    width: 100%; }
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .header__navigation-link {
     font-size: 1rem; }
+    .header__navigation-link:before {
+      border-width: 0.01em 0 0.01em 0; }
   .main {
     padding-top: 20rem; }
   .swiper-container {

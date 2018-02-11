@@ -1,6 +1,6 @@
 
 .main {
-  //background-image: url(../img/sky.png);
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -24,7 +24,7 @@
   transform: translate(-50%, -50%),  rotateY(0);
   cursor: pointer;
   transition: all 0.2s linear;
- animation: colorRotate 2s linear infinite;
+ animation: colorRotate 5s linear infinite;
 
 }
 

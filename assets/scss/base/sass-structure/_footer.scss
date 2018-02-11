@@ -25,12 +25,8 @@
     		margin: 0 0 0.5em 0;
     		color: $footer-heading;
     		text-transform: uppercase;
-    		font-weight: 100;
-
-    		
-    	}
-
-    	
+    		font-weight: 100; 		
+    	} 	
 	}
 
 	&__navigation {
@@ -41,7 +37,6 @@
 			text-decoration: none;
 			color: $footer-heading;
 			border-bottom: 1px dashed $footer-heading;
-
 		} 
 	}
 
@@ -51,7 +46,6 @@
 		color: $copiright-color;
 		padding-top: 1.5em;
 	}
-
 	&__logo {
 		@extend %vam;
 		position: absolute;
@@ -92,7 +86,7 @@ a {
   		color: #42e39d;
 		}
 }
-@media (-webkit-min-device-pixel-ratio:0) {
+
   a {
     background-color: skyBlue;
     background-image: -webkit-linear-gradient(left,   #42e39d 0%, #ee970e 50%, transparent 50%);
@@ -107,4 +101,3 @@ a {
     color: transparent;
     transition: .4s 0;
   }
-}

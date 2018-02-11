@@ -12,11 +12,11 @@ window.onload = function () {
 		var x = event.clientX - parallaxBox.offsetLeft,
 		y = event.clientY - parallaxBox.offsetTop;
 		
-		mouseParallax ( 'l1', c1left, c1top, x, y, 1500 );
-		mouseParallax ( 'l2', c1left, c1top, x, y, 3000 );
-		mouseParallax ( 'l3', c1left, c1top, x, y, 6500 );
-		mouseParallax ( 'l4', c1left, c1top, x, y, 5400 );
-		mouseParallax ( 'l5', c1left, c1top, x, y, 2060 );
+		mouseParallax ( 'l1', c1left, c1top, x, y, 100 );
+		mouseParallax ( 'l2', c1left, c1top, x, y, 5060 );
+		mouseParallax ( 'l3', c1left, c1top, x, y, 1500 );
+		mouseParallax ( 'l4', c1left, c1top, x, y, 4000 );
+		mouseParallax ( 'l5', c1left, c1top, x, y, 2360 );
 		
 	}
 	
