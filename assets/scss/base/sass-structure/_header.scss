@@ -26,6 +26,7 @@ body, html {
 
 .clipPolygon {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
 }
 
 

@@ -437,7 +437,8 @@ body, html {
   position: absolute; }
 
 .clipPolygon {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%); }
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%); }
 
 .header__navigation {
   width: 65%;
